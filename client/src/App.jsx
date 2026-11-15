@@ -2,8 +2,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API_URL = 'https://drone-fleet-tracker.onrender.com/api/drones'
-
+const API_URL = `${import.meta.env.VITE_API_URL}/api/drones`
 function App() {
   const [drones, setDrones] = useState([])
   const [loading, setLoading] = useState(true)
